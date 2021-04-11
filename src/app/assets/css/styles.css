@@ -14,7 +14,7 @@ body{
     padding: 6px;
     font-family: sans-serif;
     display: grid;
-    grid-template-columns:20% 1fr;
+    grid-template-columns:16% 1fr;
     grid-template-rows:1fr;
     gap: 10px;
 }
@@ -33,18 +33,22 @@ body{
     grid-column:1/-1;
     grid-row:1/2;
     background-image: url(/src/app/assets/img/original.jpg);
-    background-size: 90% 90%;
+    background-size: 100% 80%;
     background-position: center;
     background-repeat: no-repeat;
 }
 .menu{
     grid-column:1/-1;
     grid-row:2/-1;
-    width: 90%;
-    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-menu{
+    width: 80%;
+    height: 86%;
     border-radius: 1%;
-    margin: 0px auto;
-    background-color: #006400;
+    background-color: var(--color-aux);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -57,8 +61,32 @@ body{
     cursor: pointer;
 }
 .menu-item a{
+    position: relative;
     text-decoration: none;
-    color: var(--color-aux);
+    color: #3a3a3a;
+    padding:2px;
+    letter-spacing: 2px;
+    transition: color 0.4s;
+    z-index: 0;
+}
+.menu-item a:hover{
+    color:#ffffff;
+}
+.menu-item a::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 102%;
+    background-color: var(--color-primary);
+    clip-path: polygon(0 0,100% 0,88% 100%,0 100%);
+    border-radius: 10%;
+    transition: width 0.4s;
+    z-index: -1;
+}
+.menu-item a:hover::before{
+    background-color: var(--color-primary);
+    width: 120%;
 }
 /* style to the scrollbar */
 main::-webkit-scrollbar{
@@ -81,7 +109,7 @@ main::-webkit-scrollbar-thumb:hover{
     overflow: scroll;
 }
 .main section{
-    margin: 10px 0px;
+    margin: 22px 0px;
 }
 .header{
     grid-column:1/-1;
@@ -89,11 +117,11 @@ main::-webkit-scrollbar-thumb:hover{
     height: 100%;
     border-radius: 1%;
     background-image:linear-gradient(to right, #07f82f70,#06cf1670),
-    url(/src/app/assets/img/R556104eb28a14a4da6cf4656a0999737.jpg);
+    url(/src/app/assets/img/example1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    clip-path: polygon(0 0,100% 0,100% 88%,0 100%);
+    clip-path: polygon(0 0,100% 0,100% 84%,0 98%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,8 +136,8 @@ main::-webkit-scrollbar-thumb:hover{
 }
 .header-title span{
     display: block;
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 26px;
+    font-weight: 200;
     letter-spacing: 2px;
     margin-top: 20px;
 }
