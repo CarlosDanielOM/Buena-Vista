@@ -112,7 +112,7 @@ main::-webkit-scrollbar-thumb:hover{
     overflow: scroll;
 }
 .main section{
-    margin: 44px 0px 0px 0px;
+    margin: 48px 0px 0px 0px;
 }
 .header{
     grid-column:1/-1;
@@ -161,6 +161,10 @@ main::-webkit-scrollbar-thumb:hover{
     grid-row:4/5;
     height: 100%;
     background-color: #04f841;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
 }
 .cont-img{
     grid-column:1/-1;
