@@ -124,7 +124,7 @@ main::-webkit-scrollbar-thumb:hover{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    clip-path: polygon(0 0,100% 0,100% 84%,0 98%);
+    clip-path: polygon(0 4%,100% 0,100% 94%,0 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,6 +136,10 @@ main::-webkit-scrollbar-thumb:hover{
     font-size: 44px;
     font-weight:700;
     letter-spacing: 8px;
+    animation-name: textAnimation;
+    animation-duration: 1.2s;
+    animation-delay: .2s;
+    animation-timing-function:ease-in;
 }
 .header-title span{
     display: block;
@@ -176,7 +180,30 @@ main::-webkit-scrollbar-thumb:hover{
     grid-column:1/-1;
     grid-row:6/7;
     height: 100%;
-    background-color: #ab04f8;
+    border-radius: 1%;
+    background-image:linear-gradient(to right, #07f82f6b,#06cf176b),
+    url(/src/app/assets/img/pexels-philip-ackermann-1666021.jpg);
+    background-size:contain, 100% 180%;
+    background-repeat: no-repeat;
+    background-position: center;
+    clip-path: polygon(0 4%,100% 0,100% 96%,0 100%);
+}
+/* animations page */
+@keyframes textAnimation {
+    0% {
+        opacity: 0;
+        transform: scaleZ(-12px);
+    }
+    30% {
+        transform: scaleZ(-4px);
+    }
+    60% {
+        transform: scaleZ(4px);
+    }
+    100% {
+        opacity: 1;
+        transform: scaleZ(0);
+    }    
 }
 @media (max-width:600px){}
 @media (min-width:601px) and (max-width:991px){}
