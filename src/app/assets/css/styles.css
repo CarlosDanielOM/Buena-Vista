@@ -108,11 +108,12 @@ main::-webkit-scrollbar-thumb:hover{
     grid-column:2/3;
     grid-row:1/-1;
     grid-template-columns:1fr;
-    grid-template-rows:repeat(6, 1fr);
+    grid-template-rows:repeat(5, 1fr);
+    
     overflow: scroll;
 }
 .main section{
-    margin: 48px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 .header{
     grid-column:1/-1;
@@ -148,23 +149,58 @@ main::-webkit-scrollbar-thumb:hover{
     letter-spacing: 2px;
     margin-top: 20px;
 }
-.cont-main{
-    grid-column:1/-1;
-    grid-row:2/3;
-    height: 100%;
-    background-color: #0000ff;
-}
 .cont-about{
     grid-column:1/-1;
     grid-row:3/4;
     height: 100%;
-    background-color: #ff004c;
+    border-radius: 1%;
+    display: grid;
+    grid-template-columns:60% 1fr;
+    grid-template-rows: 100%;
+    gap: 10px;
 }
-.cont-us{
+.text-about{
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    background-color: var(--color-second);
+    clip-path: polygon(0% 0%, 100% 0, 90% 50%, 100% 100%, 0 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cont-text{
+    width: 68%;
+    text-align: center;
+}
+.img-about{
+    grid-column: 2/3;
+    grid-row: 1/-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.img-about img{
+    position: absolute;
+    width: 88%;
+    height: 44%;
+}
+.cont-serv{
     grid-column:1/-1;
     grid-row:4/5;
     height: 100%;
     background-color: #04f841;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+}
+.cont-serv1{
+    grid-column:1/-1;
+    grid-row:4/5;
+    height: 100%;
+    background-color: #b700ff;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
@@ -181,9 +217,9 @@ main::-webkit-scrollbar-thumb:hover{
     grid-row:6/7;
     height: 100%;
     border-radius: 1%;
-    background-image:linear-gradient(to right, #07f82f6b,#06cf176b),
+    background-image:linear-gradient(to right, #07f82f78,#06cf1778),
     url(/src/app/assets/img/pexels-philip-ackermann-1666021.jpg);
-    background-size:contain, 100% 180%;
+    background-size:contain, 100% 220%;
     background-repeat: no-repeat;
     background-position: center;
     clip-path: polygon(0 4%,100% 0,100% 96%,0 100%);
