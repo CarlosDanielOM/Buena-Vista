@@ -22,3 +22,16 @@ link2.addEventListener("click",function(){
     serv1.style.width ="0%";
     serv2.style.width ="100%";
 })
+var main_scroll=document.getElementById('main');
+var text_b=document.getElementById('cont-text');
+var img_b=document.getElementById('img-abt');
+main_scroll.addEventListener("scroll",function(){
+    var h=parseInt(main_scroll.innerHeight);
+    var d=text_b.getBoundingClientRect().top;
+    console.log(h);
+    console.log(d);
+    if(d<=h){
+        text_b.classList.add("transitionX");
+    }
+})
+
