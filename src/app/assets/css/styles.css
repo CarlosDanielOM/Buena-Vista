@@ -243,6 +243,10 @@ main::-webkit-scrollbar-thumb:hover{
     height: 40%;
     border-radius: 1%;
     background-color: blueviolet;
+    transition: transform .5s ease-in-out;
+}
+.service-section:hover{
+    transform: scale(1.1);
 }
 .change-serv{
     grid-column: 1/2;
@@ -295,12 +299,12 @@ main::-webkit-scrollbar-thumb:hover{
 .delete{
     display: none;
 }
-.trasitionX{
+.transitionX{
     animation-name: transitionX;
     animation-duration: .5s;
     animation-timing-function:ease-in;
 }
-.trasitionUp{
+.transitionUp{
     animation-name: transitionUp;
     animation-duration: .5s;
     animation-timing-function:ease-in;

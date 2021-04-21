@@ -25,13 +25,20 @@ link2.addEventListener("click",function(){
 var main_scroll=document.getElementById('main');
 var text_b=document.getElementById('cont-text');
 var img_b=document.getElementById('img-abt');
+
 main_scroll.addEventListener("scroll",function(){
-    var h=parseInt(main_scroll.innerHeight);
+    var h=window.innerHeight/1.2;
+    var h1=window.innerHeight;
     var d=text_b.getBoundingClientRect().top;
     console.log(h);
+    console.log(h1);
     console.log(d);
-    if(d<=h){
+    if(d<=640 & d>=-300){
         text_b.classList.add("transitionX");
+        img_b.classList.add("transitionUp");
+    }else{
+        text_b.classList.remove("transitionX");
+        img_b.classList.remove("transitionUp");
     }
 })
 
