@@ -115,7 +115,7 @@ main::-webkit-scrollbar-thumb:hover{
     overflow: scroll;
 }
 .main > section{
-    margin-top: 44px;
+    margin-top: 60px;
 }
 .header{
     grid-column:1/-1;
@@ -211,14 +211,13 @@ main::-webkit-scrollbar-thumb:hover{
     display: grid;
     grid-template-columns:1fr;
     grid-template-rows:80% 1fr;
+    overflow: hidden;
 }
 .service{
     grid-column: 1/2;
     grid-row: 1/2;
-    height: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     overflow: hidden;
 }
 .serv1{
@@ -260,8 +259,8 @@ main::-webkit-scrollbar-thumb:hover{
 }
 .link-serv{
     display: block;
-    width: 48px;
-    height: 12px;
+    width: 50px;
+    height: 10px;
     border-radius: 10px;
     border: 1.4px solid var(--color-primary);
     background-color: #ffffff;
@@ -281,6 +280,7 @@ main::-webkit-scrollbar-thumb:hover{
 .gallery-img{
     width: 100%;
     height: 100%;
+    border-radius: 2%;
     background-color: rgba(139, 139, 139, 0.404);
     backdrop-filter: blur(4px);
     display: grid;
