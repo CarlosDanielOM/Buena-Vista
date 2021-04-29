@@ -237,13 +237,34 @@ main::-webkit-scrollbar-thumb:hover{
 }
 .service-section{
     width: 40%;
-    height: 46%;
+    height: 48%;
     border-radius: 2%;
     background-color: blueviolet;
+    position: relative;
     transition: transform .4s ease-in-out;
 }
 .service-section:hover{
     transform: scale(1.06);
+}
+.service-section img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+}
+.service-section span{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 12%;
+    bottom: 0;
+    background-color: #21be21;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 0 0 6px 6px;
 }
 .change-serv{
     grid-column: 1/2;
