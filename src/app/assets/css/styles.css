@@ -212,12 +212,11 @@ main::-webkit-scrollbar-thumb:hover{
     display: grid;
     grid-template-columns:1fr;
     grid-template-rows:80% 1fr;
-    overflow: hidden;
 }
 .service{
     grid-column: 1/2;
     grid-row: 1/2;
-    
+   overflow: hidden; 
 }
 .serv1{ 
     width: 100%;
@@ -240,7 +239,6 @@ main::-webkit-scrollbar-thumb:hover{
     width: 40%;
     height: 48%;
     border-radius: 2%;
-    background-color: blueviolet;
     position: relative;
     transition: transform .4s ease-in-out;
     cursor: pointer;
@@ -314,11 +312,19 @@ main::-webkit-scrollbar-thumb:hover{
     height: 100%;
     border-radius: 1%;
     background-image:linear-gradient(to right, #09cc2994,#06cf17a8),
-    url(/src/app/assets/img/pexels-james-wheeler-417074.jpg);
+    url(/src/app/assets/img/pexels-james-wheeler.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
     clip-path: polygon(0 4%,100% 0,100% 96%,0 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.data-contact{
+    width: 50%;
+    height: 68%;
+    background-color: #ffffffb0;
 }
 .delete{
     display: none;
@@ -338,6 +344,11 @@ main::-webkit-scrollbar-thumb:hover{
     animation-name: transitionUp;
     animation-duration: .5s;
     animation-timing-function:ease-in;
+}
+.transitionDown{
+    animation-name: transitionDown;
+    transition-duration: .5s;
+    transition-timing-function: ease-in;
 }
 /* animations page */
 @keyframes textAnimation {
@@ -374,6 +385,20 @@ main::-webkit-scrollbar-thumb:hover{
     100%{
         opacity: 1;
         transform:translateY(0);
+    }
+}
+@keyframes transitionDown {
+    0%{
+        opacity: 0;
+        transform: translateY(-30%);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateY(-15%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 @media (max-width:600px){}
