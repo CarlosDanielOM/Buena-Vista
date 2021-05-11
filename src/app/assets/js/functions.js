@@ -8,9 +8,9 @@ main_scroll.addEventListener("scroll",function(){
     var h=window.innerHeight;
     var d=text_b.getBoundingClientRect().top;
     var x=contact_b.getBoundingClientRect().top;
-    console.log(h);
+    /*console.log(h);
     console.log(d);
-    console.log(x);
+    console.log(x);*/
     if(d<=(h-100) & d>=(h-1100)){
         text_b.classList.add("transitionX");
         img_b.classList.add("transitionUp");
