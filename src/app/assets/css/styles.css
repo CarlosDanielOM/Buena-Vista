@@ -409,7 +409,7 @@ main::-webkit-scrollbar-thumb:hover{
     }
     .aside-menu{
        width: 100%;
-       height: 12vh;
+       height: 8vh;
        position:fixed;
        top: 0px;
        z-index: 1;
@@ -427,7 +427,7 @@ main::-webkit-scrollbar-thumb:hover{
         grid-column:1/2;
         grid-row:1/-1;
         background-image: url(/src/app/assets/img/original.jpg);
-        background-size:80%;
+        background-size:60% 100%;
         background-position: center;
         background-repeat: no-repeat;
     }
@@ -439,7 +439,7 @@ main::-webkit-scrollbar-thumb:hover{
         align-items: center;
     }
     .sub-menu{
-        width: 80%;
+        width: 96%;
         height: 86%;
         border-radius: 1%;
         background-color: var(--color-aux);
@@ -457,7 +457,7 @@ main::-webkit-scrollbar-thumb:hover{
         text-decoration: none;
         color: #222222;
         padding: 6px;
-        font-size: 18px;
+        font-size: 16px;
         font-family:sans-serif;
         font-weight: 500;
         letter-spacing: 2px;
@@ -501,20 +501,20 @@ main::-webkit-scrollbar-thumb:hover{
     }
     .main{
         width: 100%;
-        height: 440vh;
-        margin-top: 12vh;
-        display: grid;
-        grid-template-columns:1fr;
-        grid-template-rows:repeat(5, 1fr);
+        margin-top: 8vh;
+        display: flex;
+        flex-direction: column;
         padding: 0px;
     }
     .main > section{
-        margin-top: 60px;
+        width: 100%;
+        height: 80vh;
+        min-height: 2000px;
+        max-height: 4000px;
+        margin-top: 20%;
     }
     .header{
-        grid-column:1/-1;
-        grid-row:1/2;
-        height: 100%;
+        height: 90vh;
         border-radius: 1%;
         background-image:linear-gradient(to right, #04da2870,#019e0e70),
         url(/src/app/assets/img/example1.jpg);
@@ -546,9 +546,6 @@ main::-webkit-scrollbar-thumb:hover{
         margin-top: 40px;
     }
     .cont-about{
-        grid-column:1/-1;
-        grid-row:2/3;
-        height: 100%;
         border-radius: 1%;
         display: grid;
         grid-template-columns:52% 1fr;
@@ -556,8 +553,6 @@ main::-webkit-scrollbar-thumb:hover{
         gap: 10px;
     }
     .text-about{
-        grid-column: 1/2;
-        grid-row: 1/-1;
         background-color:#21be21f6;
         clip-path: polygon(0 0, 88% 0, 100% 100%, 12% 100%);
         border-radius: 1%;
@@ -585,8 +580,6 @@ main::-webkit-scrollbar-thumb:hover{
         text-align: justify;
     }
     .img-about{
-        grid-column: 2/3;
-        grid-row: 1/-1;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -597,11 +590,6 @@ main::-webkit-scrollbar-thumb:hover{
         width: 94%;
         height: 64%;
         border-radius: 1%;
-    }
-    .cont-serv{
-        grid-column:1/-1;
-        grid-row:3/4;
-        height: 100%;
     }
     .service{
        width: 100%;
@@ -662,9 +650,6 @@ main::-webkit-scrollbar-thumb:hover{
         border-radius: 0 0 6px 6px;
     }
     .cont-img{
-        grid-column:1/-1;
-        grid-row:4/5;
-        height: 100%;
         border-radius: 2%;
         background-image: url(/src/app/assets/img/example2.jpg);
         background-position: center;
@@ -681,9 +666,6 @@ main::-webkit-scrollbar-thumb:hover{
         grid-template-rows: repeat(2, 1fr);
     }
     .cont-contact{
-        grid-column:1/-1;
-        grid-row:5/6;
-        height: 100%;
         border-radius: 1%;
         background-image:linear-gradient(to right, #09cc2994,#06cf17a8),
         url(/src/app/assets/img/pexels-james-wheeler.jpg);
