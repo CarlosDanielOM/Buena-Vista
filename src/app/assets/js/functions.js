@@ -18,10 +18,5 @@ main_scroll.addEventListener("scroll",function(){
         text_b.classList.remove("transitionX");
         img_b.classList.remove("transitionUp");
     }
-    if(x>=(h-20)){
-        contact_b.classList.add("transitionDown");
-    }else{
-        contact_b.classList.remove("transitionDown");
-    }
 })
 
