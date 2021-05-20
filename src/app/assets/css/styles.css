@@ -300,8 +300,42 @@ main::-webkit-scrollbar-thumb:hover{
 }
 .data-contact{
     width: 50%;
-    height: 68%;
+    height: 80%;
     background-color: #ffffffb0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+}
+.data-contact h4{
+    font-size: 44px;
+    font-family: sans-serif;
+    color: #6d6d6d;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.data-contact > div{
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+}
+.data-contact > div > input{
+    width: 44%;
+    height: 24px;
+    border: none;
+    background-color: #ffffffef;
+}
+.data-contact > input{
+    width: 60%;
+    height: 24px;
+    border: none;
+    background-color: #ffffffef;
+}
+.data-contact > textarea{
+    width: 60%;
+    border: none;
+    background-color: #ffffffef;
 }
 .delete{
     display: none;
