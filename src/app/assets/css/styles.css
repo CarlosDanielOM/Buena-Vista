@@ -32,7 +32,7 @@ body{
 .box-logo{
     grid-column:1/-1;
     grid-row:1/2;
-    background-image: url(/src/app/assets/img/original.jpg);
+    background-image: url(./../../assets/img/original.jpg);
     background-size: 100% 80%;
     background-position: center;
     background-repeat: no-repeat;
@@ -126,7 +126,7 @@ main::-webkit-scrollbar-thumb:hover{
     height: 100%;
     border-radius: 1%;
     background-image:linear-gradient(to right, #04da2870,#019e0e70),
-    url(/src/app/assets/img/example1.jpg);
+    url(./../../assets/img/example1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -269,7 +269,7 @@ main::-webkit-scrollbar-thumb:hover{
     grid-row:4/5;
     height: 100%;
     border-radius: 2%;
-    background-image: url(/src/app/assets/img/example2.jpg);
+    background-image: url(./../../assets/img/example2.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -289,7 +289,7 @@ main::-webkit-scrollbar-thumb:hover{
     height: 100%;
     border-radius: 1%;
     background-image:linear-gradient(to right, #09cc2994,#06cf17a8),
-    url(/src/app/assets/img/pexels-james-wheeler.jpg);
+    url(./../../assets/img/pexels-james-wheeler.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -738,7 +738,7 @@ main::-webkit-scrollbar-thumb:hover{
     }
     .cont-img{
         border-radius: 2%;
-        background-image: url(/src/app/assets/img/example2.jpg);
+        background-image: url(./../../assets/img/example2.jpg);
         background-position: center;
         background-size: cover;
     }
