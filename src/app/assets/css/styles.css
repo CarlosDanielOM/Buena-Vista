@@ -300,8 +300,42 @@ main::-webkit-scrollbar-thumb:hover{
 }
 .data-contact{
     width: 50%;
-    height: 68%;
+    height: 80%;
     background-color: #ffffffb0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+}
+.data-contact h4{
+    font-size: 44px;
+    font-family: sans-serif;
+    color: #6d6d6d;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.data-contact > div{
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+}
+.data-contact > div > input{
+    width: 44%;
+    height: 24px;
+    border: none;
+    background-color: #ffffffef;
+}
+.data-contact > input{
+    width: 60%;
+    height: 24px;
+    border: none;
+    background-color: #ffffffef;
+}
+.data-contact > textarea{
+    width: 60%;
+    border: none;
+    background-color: #ffffffef;
 }
 .delete{
     display: none;
@@ -420,7 +454,7 @@ main::-webkit-scrollbar-thumb:hover{
     .box-logo{
         grid-column:1/2;
         grid-row:1/-1;
-        background-size:60% 80%;
+        background-size:96% 76%;
     }
     .menu{
         grid-column:2/3;
@@ -459,9 +493,8 @@ main::-webkit-scrollbar-thumb:hover{
     }
     .main > section{
         width: 100%;
-        height: 60vh;
-        min-height: 460px;
-        max-height: 800px;
+        /* min-height: 440px;
+        max-height: 660px; */
         margin-top: 20%;
     }
     .header{
@@ -478,15 +511,16 @@ main::-webkit-scrollbar-thumb:hover{
         letter-spacing: 1px;
     }
     .cont-about{
+        height: 140vh;
         border-radius: 1%;
         display: grid;
-        grid-template-columns:58% 1fr;
-        grid-template-rows: 100%;
+        grid-template-columns:1fr;
+        grid-template-rows: 60% 1fr;
         gap: 10px;
     }
     .text-about{
         grid-column: 1/2;
-        grid-row: 1/-1;
+        grid-row: 1/2;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -496,27 +530,30 @@ main::-webkit-scrollbar-thumb:hover{
         width: 68%;
     }
     .cont-text  h4{
-        font-size: 36px;
+        font-size: 20px;
         font-weight: 500;
     }
     .cont-text p{
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 400;
     }
     .img-about{
-        grid-column: 2/3;
-        grid-row: 1/-1;
+        grid-column: 1/2;
+        grid-row: 2/3;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .cont-serv{
+        height: 180vh;
     }
     .service{
        width: 100%;
        height: 100%;
     }
     .service-section{
-        width: 22%;
-        height: 44%;
+        width: 48%;
+        height: 22%;
         border-radius: 2%;
         position: relative;
     }
@@ -536,25 +573,10 @@ main::-webkit-scrollbar-thumb:hover{
         letter-spacing: 1px;
     }
     .cont-img{
-        border-radius: 2%;
-        background-image: url(/src/app/assets/img/example2.jpg);
-        background-position: center;
-        background-size: cover;
+        height: 80vh;
     }
-    .gallery-img{
-        width: 100%;
-        height: 100%;
-        border-radius: 2%;
-        background-color: rgba(139, 139, 139, 0.404);
-        backdrop-filter: blur(4px);
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-    .data-contact{
-        width: 88%;
-        height: 60%;
-        background-color: #ffffffb0;
+    .cont-contact{
+        height: 80vh;
     }
 }
 @media (min-width:601px) and (max-width:1080px){
