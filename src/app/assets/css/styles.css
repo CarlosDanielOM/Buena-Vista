@@ -337,8 +337,10 @@ main::-webkit-scrollbar-thumb:hover{
     font-size: 18px;
 }
 .data-contact > div > input:focus{
-    background-color: #21be21;
-    border-color: var(--color-primary) !important;
+    font-family: cursive;
+}
+.data-contact > input:focus{
+    font-family: cursive;
 }
 .data-contact > input{
     width: 60%;
@@ -356,6 +358,17 @@ main::-webkit-scrollbar-thumb:hover{
     font-family: sans-serif;
     font-size: 18px;
 }
+.data-contact .email-button{
+    border-radius: 6px;
+    transition: transform 10ms ease-in-out;
+}
+.data-contact .email-button:hover{
+    background-color:var(--color-primary);
+    color: #ffffffdf;
+}
+.data-contact .email-button:active{
+    transform: scale(.9);
+}
 .services-2{
     grid-column: 2/3;
     grid-row: 1/-1;
@@ -369,6 +382,11 @@ main::-webkit-scrollbar-thumb:hover{
     height: 30%;
     margin: 1%;
     position: relative;
+    cursor: pointer;
+    transition: transform .4s ease-in;
+}
+.markup:hover{
+    transform: scale(1.1);
 }
 .markup img{
     width: 100%;
