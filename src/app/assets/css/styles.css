@@ -309,6 +309,7 @@ main::-webkit-scrollbar-thumb:hover{
 .data-contact{
     width: 80%;
     height: 80%;
+    border-radius:2%;
     background-color: #ffffffb0;
     display: flex;
     flex-direction: column;
@@ -391,12 +392,14 @@ main::-webkit-scrollbar-thumb:hover{
 .markup img{
     width: 100%;
     height: 100%;
+    border-radius: 2%;
 }
 .markup span{
     position: absolute;
     left: 0px;
     bottom: 0;
     width: 100%;
+    border-radius: 0% 0% 2% 2%;
     background-color: #21be21;
     color: #ffffffb2;
 }
@@ -844,7 +847,7 @@ main::-webkit-scrollbar-thumb:hover{
         transition: transform 10ms ease-in-out;
     }
     .markup{
-        width: 44%;
+        width: 40%;
         height: 24%;
         margin: 1%;
         position: relative;
@@ -934,5 +937,46 @@ main::-webkit-scrollbar-thumb:hover{
         width: 50%;
         height: 68%;
         background-color: #ffffffb0;
+    }
+    .data-contact{
+        width: 84%;
+        height: 80%;
+        gap: 4%;
+    }
+    .data-contact h4{
+        font-size: 48px;
+    }
+    .data-contact > div > input{
+        width: 44%;
+        height: 32px;
+        font-size: 24px;
+    }
+    .data-contact > input{
+        width: 68%;
+        height: 32px;
+        font-size: 24px;
+    }
+    .data-contact > textarea{
+        width: 68%;
+        height: 28%;
+        font-size: 24px;
+    }
+    .data-contact .email-button{
+        font-size: 24px;
+        border-radius: 6px;
+        transition: transform 10ms ease-in-out;
+    }
+    .markup{
+        width: 40%;
+        height: 24%;
+        margin: 1%;
+        position: relative;
+        cursor: pointer;
+        transition: transform .4s ease-in;
+    }
+    .markup span{
+        width: 100%;
+        height: 16%;
+        font-size: 28px;
     }
 }
