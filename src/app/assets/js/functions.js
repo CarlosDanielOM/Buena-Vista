@@ -19,4 +19,13 @@ main_scroll.addEventListener("scroll",function(){
         img_b.classList.remove("transitionUp");
     }
 })
+var mark1=document.getElementById("mark1");
+var mark2=document.getElementById("mark2");
+var mark3=document.getElementById("mark3");
+var mark4=document.getElementById("mark4");
+var mark5=document.getElementById("mark5");
+var mark6=document.getElementById("mark6");
 
+/*switch (){
+    
+}*/
