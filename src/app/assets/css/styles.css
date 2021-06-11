@@ -407,6 +407,7 @@ main::-webkit-scrollbar-thumb:hover{
     width: 100%;
     border-radius: 0% 0% 2% 2%;
     background-color: #21be21;
+    font-size: 18px;
     color: #ffffffb2;
 }
 .delete{
@@ -417,6 +418,10 @@ main::-webkit-scrollbar-thumb:hover{
 }
 .output{
     height: 0% !important;
+}
+.select-mark{
+    border: 4px solid #00ff62;
+    transform: scale(.9);
 }
 .transitionX{
     animation-name: transitionX;

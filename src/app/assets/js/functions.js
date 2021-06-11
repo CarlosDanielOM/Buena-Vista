@@ -25,7 +25,83 @@ var mark3=document.getElementById("mark3");
 var mark4=document.getElementById("mark4");
 var mark5=document.getElementById("mark5");
 var mark6=document.getElementById("mark6");
-
-/*switch (){
-    
-}*/
+var cont=0;
+mark1.addEventListener("click", function(){
+    cont=1;
+    contar();
+})
+mark2.addEventListener("click", function(){
+    cont=2;
+    contar();
+})
+mark3.addEventListener("click", function(){
+    cont=3;
+    contar();
+})
+mark4.addEventListener("click", function(){
+    cont=4;
+    contar();
+})
+mark5.addEventListener("click", function(){
+    cont=5;
+    contar();
+})
+mark6.addEventListener("click", function(){
+    cont=6;
+    contar();
+})
+function contar(){
+    if(cont>0){
+        x=cont;
+        switch(x){
+            case 1:
+                mark1.classList.add("select-mark");
+                mark2.classList.remove("select-mark");
+                mark3.classList.remove("select-mark");
+                mark4.classList.remove("select-mark");
+                mark5.classList.remove("select-mark");
+                mark6.classList.remove("select-mark");
+                break;
+            case 2:
+                mark2.classList.add("select-mark");
+                mark1.classList.remove("select-mark");
+                mark3.classList.remove("select-mark");
+                mark4.classList.remove("select-mark");
+                mark5.classList.remove("select-mark");
+                mark6.classList.remove("select-mark");
+                break;
+            case 3:
+                mark3.classList.add("select-mark");
+                mark2.classList.remove("select-mark");
+                mark1.classList.remove("select-mark");
+                mark4.classList.remove("select-mark");
+                mark5.classList.remove("select-mark");
+                mark6.classList.remove("select-mark");
+                break;
+            case 4:
+                mark4.classList.add("select-mark");
+                mark2.classList.remove("select-mark");
+                mark3.classList.remove("select-mark");
+                mark1.classList.remove("select-mark");
+                mark5.classList.remove("select-mark");
+                mark6.classList.remove("select-mark");
+                break;
+            case 5:
+                mark5.classList.add("select-mark");
+                mark2.classList.remove("select-mark");
+                mark3.classList.remove("select-mark");
+                mark4.classList.remove("select-mark");
+                mark1.classList.remove("select-mark");
+                mark6.classList.remove("select-mark");
+                break;    
+            case 6:
+                mark6.classList.add("select-mark");
+                mark2.classList.remove("select-mark");
+                mark3.classList.remove("select-mark");
+                mark4.classList.remove("select-mark");
+                mark5.classList.remove("select-mark");
+                mark1.classList.remove("select-mark");
+                break;                
+        }
+    }
+}
