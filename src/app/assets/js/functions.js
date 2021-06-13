@@ -18,13 +18,16 @@ main_scroll.addEventListener("scroll",function(){
         text_b.classList.remove("transitionX");
         img_b.classList.remove("transitionUp");
     }
-})
+});
+var serv= document.getElementsByClassName("info");
+
 var mark1=document.getElementById("mark1");
 var mark2=document.getElementById("mark2");
 var mark3=document.getElementById("mark3");
 var mark4=document.getElementById("mark4");
 var mark5=document.getElementById("mark5");
 var mark6=document.getElementById("mark6");
+var text_serv=document.getElementById("text-service");
 var cont=0;
 mark1.addEventListener("click", function(){
     cont=1;
@@ -56,6 +59,7 @@ function contar(){
         switch(x){
             case 1:
                 mark1.classList.add("select-mark");
+                text_serv.innerHTML="Maintenance";
                 mark2.classList.remove("select-mark");
                 mark3.classList.remove("select-mark");
                 mark4.classList.remove("select-mark");
@@ -64,6 +68,7 @@ function contar(){
                 break;
             case 2:
                 mark2.classList.add("select-mark");
+                text_serv.innerHTML="Clean up";
                 mark1.classList.remove("select-mark");
                 mark3.classList.remove("select-mark");
                 mark4.classList.remove("select-mark");
@@ -72,6 +77,7 @@ function contar(){
                 break;
             case 3:
                 mark3.classList.add("select-mark");
+                text_serv.innerHTML="Planting";
                 mark2.classList.remove("select-mark");
                 mark1.classList.remove("select-mark");
                 mark4.classList.remove("select-mark");
@@ -80,6 +86,7 @@ function contar(){
                 break;
             case 4:
                 mark4.classList.add("select-mark");
+                text_serv.innerHTML="Sod installation";
                 mark2.classList.remove("select-mark");
                 mark3.classList.remove("select-mark");
                 mark1.classList.remove("select-mark");
@@ -88,6 +95,7 @@ function contar(){
                 break;
             case 5:
                 mark5.classList.add("select-mark");
+                text_serv.innerHTML="Pavers";
                 mark2.classList.remove("select-mark");
                 mark3.classList.remove("select-mark");
                 mark4.classList.remove("select-mark");
@@ -96,6 +104,7 @@ function contar(){
                 break;    
             case 6:
                 mark6.classList.add("select-mark");
+                text_serv.innerHTML="Leakage repairs";
                 mark2.classList.remove("select-mark");
                 mark3.classList.remove("select-mark");
                 mark4.classList.remove("select-mark");
