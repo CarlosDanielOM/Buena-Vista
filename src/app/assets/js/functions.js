@@ -19,7 +19,59 @@ main_scroll.addEventListener("scroll",function(){
         img_b.classList.remove("transitionUp");
     }
 });
-var serv= document.getElementsByClassName("info");
+var add;
+var serv1= document.getElementById("info1");
+var serv2= document.getElementById("info2");
+var serv3= document.getElementById("info3");
+var serv4= document.getElementById("info4");
+var serv5= document.getElementById("info5");
+var serv6= document.getElementById("info6");
+var serv7= document.getElementById("info7");
+var serv8= document.getElementById("info8");
+var clas=document.getElementsByClassName("box-info");
+console.log(clas);
+serv1.addEventListener("click",function(){
+    add=0;
+    change(add);
+});
+serv2.addEventListener("click",function(){
+    add=1;
+    change(add);
+});
+serv3.addEventListener("click",function(){
+    add=2;
+    change(add);
+});
+serv4.addEventListener("click",function(){
+    add=3;
+    change(add);
+});
+serv5.addEventListener("click",function(){
+    add=4;
+    change(add);
+});
+serv6.addEventListener("click",function(){
+    add=5;
+    change(add);
+});
+serv7.addEventListener("click",function(){
+    add=6;
+    change(add);
+});
+serv8.addEventListener("click",function(){
+    add=7;
+    change(add);
+});
+function change(x){
+    prop=x;
+    for(i=0;i<=7;i++){
+        if(i==prop){
+            clas[i].classList.add("down-box");
+        }else{
+            clas[i].classList.remove("down-box");
+        }
+    }
+}
 
 var mark1=document.getElementById("mark1");
 var mark2=document.getElementById("mark2");

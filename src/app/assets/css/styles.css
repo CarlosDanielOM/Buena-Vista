@@ -429,6 +429,9 @@ main::-webkit-scrollbar-thumb:hover{
 .output{
     height: 0% !important;
 }
+.down-box{
+    height: 100%;
+}
 .select-mark{
     border: 4px solid #00ff62;
     transform: scale(.9);
