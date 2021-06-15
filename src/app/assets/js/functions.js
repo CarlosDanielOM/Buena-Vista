@@ -29,7 +29,6 @@ var serv6= document.getElementById("info6");
 var serv7= document.getElementById("info7");
 var serv8= document.getElementById("info8");
 var clas=document.getElementsByClassName("box-info");
-console.log(clas);
 serv1.addEventListener("click",function(){
     add=0;
     change(add);
