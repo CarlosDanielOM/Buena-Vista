@@ -71,7 +71,16 @@ function change(x){
         }
     }
 }
-
+var item_img=document.getElementsByClassName("gallery-item");
+var random=Math.floor(Math.random() * (16-1+1)) + 0;
+console.log(random);
+function animatimg(){
+    var cont;
+    for(cont=0;cont<=item_img.length;cont++){
+        console.log(item_img[cont]);
+    }
+}
+setTimeout(animatimg,4000);
 var mark1=document.getElementById("mark1");
 var mark2=document.getElementById("mark2");
 var mark3=document.getElementById("mark3");
