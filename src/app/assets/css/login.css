@@ -1,0 +1,17 @@
+/* :root{
+
+} */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@media (max-width:600px){
+
+}
+@media (min-width:601px) and (max-width:1080px){
+
+}
+@media (min-width:1440px){
+
+}
