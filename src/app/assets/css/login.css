@@ -11,7 +11,7 @@ body{
     height: 100vh;
     background-image:linear-gradient(to right, #0000009a,#0000009a),
     url(../img/pexels-james-wheeler.jpg);
-    background-size:100%;
+    background-size:100% 100vh;
     background-repeat: no-repeat;
     display: grid;
     grid-column:1fr;
@@ -28,9 +28,9 @@ body{
 }
 img{
     display: block;
-     width: 12%;
-     height: 64%;
-     margin: 2% 6%;
+     width: 14%;
+     height: 68%;
+     margin: auto 8%;
 }
 .form{
     grid-column: 1/2;
@@ -67,17 +67,24 @@ form{
     justify-content: center;
     gap: 20%;
 }
-form input{
+form div{
     width: 100%;
     height: 10%;
+}
+form div input{
+    width: 100%;
+    height: 100%;
     background-color: transparent;
-    border-color: transparent transparent #fff transparent;
+    border-width: 2px;
+    border-radius: 4px;
+    border-color: transparent transparent #ffffff81 transparent;
     font-size: 24px;
     text-align: center;
     color:#ffffff;
 }
-form input:focus{
-    border:0px solid transparent;
+form div input:focus-visible{
+    color:#ffffff;
+    outline: transparent;
 }
 form button{
     margin: 0 auto;
@@ -94,11 +101,98 @@ form button:active{
     transform: scale(.9);
 }
 @media (max-width:600px){
-
+    body{
+        display: grid;
+        grid-column:1fr;
+        grid-template-rows: 12% 1fr;
+    }
+    img{
+        display: block;
+         width: 20%;
+         height: 64%;
+    }
+    .form{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 16% 1fr;  
+    }
+    .cont-user{    
+        width: 18%;
+    }
+    form{
+        width: 60%;
+    }
+    form div input{
+        font-size: 20px;
+    }
+    form button{
+        width: 48%;
+        height: 8%;
+        font-size: 16px;
+    }
 }
 @media (min-width:601px) and (max-width:1080px){
-
+    body{
+        display: grid;
+        grid-column:1fr;
+        grid-template-rows: 12% 1fr;
+    }
+    img{
+        display: block;
+         width: 16%;
+         height: 64%;
+         margin: auto 4%;
+    }
+    .form{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 18% 1fr;  
+    }
+    .cont-user{    
+        width: 10%;
+    }
+    form{
+        width: 44%;
+    }
+    form div input{
+        font-size: 20px;
+    }
+    form button{
+        width: 48%;
+        height: 10%;
+        font-size: 18px;
+        transition: transform .2s;
+    }
 }
 @media (min-width:1440px){
-
+    body{
+        display: grid;
+        grid-column:1fr;
+        grid-template-rows: 18% 1fr;
+    }
+    img{
+        display: block;
+         width: 16%;
+         height: 68%;
+         margin: auto 8%;
+    }
+    .form{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 24% 1fr;  
+    }
+    .cont-user{    
+        width: 12%;
+    }
+    form{
+        width: 28%;
+    }
+    form div input{
+        font-size: 40px;
+    }
+    form button{
+        width: 68%;
+        font-size: 28px;
+        transition: transform .2s;
+    }
 }
