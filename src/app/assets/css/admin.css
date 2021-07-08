@@ -86,6 +86,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .cont-first{
     width: 68%;
@@ -101,6 +102,7 @@ body{
     grid-template-columns: 46% 1fr;
     grid-template-rows: 1fr;
     gap: 6px;
+    overflow: hidden;
 }
 .mod-sec-date{
     grid-column: 1/2;
@@ -134,25 +136,27 @@ body{
 }
 .item-form{
     display: flex;
+    flex-direction: column;
+    margin: 2% 0px;
 }
 .title-item{
     width: 100%;
-    height: 16%;
+    height: 12%;
     background-color: blue;
 }
 .descrip-item{
     width: 100%;
-    height: 40%;
+    height: 34%;
     background-color: brown;
 }
 .img-item{
     width: 100%;
-    height: 28%;
+    height: 30%;
     background-color: chartreuse;
 }
 .buttons{
     width: 100%;
-    height: 16%;
+    height: 12%;
     background-color: crimson;
 }
 .mod-sec-list{
@@ -163,6 +167,7 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 10% 1fr;
+    overflow: hidden;
 }
 .list-title{
     grid-column: 1/2;
@@ -177,42 +182,7 @@ body{
     font-weight: 600;
     color: #3b0a95;
 }
-.sect1::-webkit-scrollbar{
-    width: 6px;
-}
-.sect1::-webkit-scrollbar-thumb{
-    /* background-color: #525252; */
-    background-color: var(--color-aux);
-    border-radius: 10px;
-}
-.sect1::-webkit-scrollbar-thumb:hover{
-    /* background-color: #525252; */
-    background-color: var(--color-aux);
-}
-.sect2::-webkit-scrollbar{
-    width: 6px;
-}
-.sect2::-webkit-scrollbar::-webkit-scrollbar-thumb{
-    /* background-color: #525252; */
-    background-color: var(--color-aux);
-    border-radius: 10px;
-}
-.sect2::-webkit-scrollbar-thumb:hover{
-    /* background-color: #525252; */
-    background-color: var(--color-aux);
-}
-.gallery-section::-webkit-scrollbar{
-    width: 6px;
-}
-.gallery-section::-webkit-scrollbar-thumb{
-    /* background-color: #525252; */
-    background-color: var(--color-aux);
-    border-radius: 10px;
-}
-.gallery-section::-webkit-scrollbar-thumb:hover{
-    /* background-color: #525252; */
-    background-color: var(--color-aux);
-}
+
 .list-content{
     grid-column: 1/2;
     grid-row: 2/3;
@@ -220,26 +190,49 @@ body{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 4px;
+    overflow: hidden;
 }
 .sect1{
     grid-column: 1/2;
     grid-row: 1/2;
     width: 100%;
-    background-color: aqua;
-    overflow: scroll;
+    overflow: hidden;
 }
 .sect2{
     grid-column: 1/2;
     grid-row: 2/3;
     width: 100%;
-    background-color: blanchedalmond;
-    overflow: scroll;
+    overflow: hidden;
 }
 .gallery-section{
     grid-column: 1/2;
     grid-row: 1/span1;
-    background-color:firebrick ;
-    overflow: scroll;
+    overflow: hidden;
+}
+.list-content section ul::-webkit-scrollbar{
+    width: 6px;
+}
+.list-content section ul::-webkit-scrollbar-thumb{
+    /* background-color: #525252; */
+    background-color: var(--color-aux);
+    border-radius: 10px;
+}
+.list-content section ul::-webkit-scrollbar-thumb:hover{
+    /* background-color: #525252; */
+    background-color: var(--color-aux);
+}
+.list-content section ul{
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow:scroll;
+}
+.date-list{
+    list-style: none;
+    width: 94%;
+    height: 48px;
+    background-color: yellow;
+    margin: 4% 2%;
 }
 #mod0{
     display: flex;
