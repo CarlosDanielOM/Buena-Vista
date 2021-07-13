@@ -233,6 +233,7 @@ body{
     height: 48px;
     background-color: yellow;
     margin: 4% 2%;
+    cursor: pointer;
 }
 #mod0{
     display: flex;
@@ -272,5 +273,77 @@ body{
 
 }
 @media (min-width:1440px){
+    body{
+        display: grid;
+        grid-template-columns:1fr ;
+        grid-template-rows: 14% 1fr;
+        gap: 2px;
+    }
+    .head{
+        border: 2px solid #ffffff;
+        border-radius: 10px;
+        margin: 0px 6px;
+    }
+    .img-logo{
+        width: 12%;
+        height: 84%;
+        margin: 0px 2%;
+    }
+    .content-sections{
+        width: 40%;
+        margin: 0px 0%;
+    }  
+    .content-sections li{
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+    .content-sections li:hover{
+        font-size: 26px;
+    }
+    .user{
+        width: 60px;
+        height: 60px;
+    }
+    .cont-first{
+        width: 80%;
+        height: 88%;
+    }
+    .content-mod{
+        display: grid;
+        grid-template-columns: 44% 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+    }
+    .mod-sec-date{
+        border: 4px solid #07e78ae1;
+        padding: 10px;
+    }
+    .date-title span{
+        font-size: 24px;
+    }
+    .mod-sec-list{
+        border: 4px solid #07e78ae1;
+        padding: 8px;
+    }
+    .list-title span{
+        font-size: 24px;
+    }
     
+    .list-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10%;
+    }
+    .date-list{
+        list-style: none;
+        width: 94%;
+        height:80px;
+    }
+    #mod0 span{
+        font-family: sans-serif;
+        font-weight: 600;
+        font-size: 36px;
+        color: #aca7a7e1;
+    }
 }

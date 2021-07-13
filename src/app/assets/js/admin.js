@@ -5,7 +5,6 @@ var usr=document.getElementById('user');
 var list=document.getElementsByClassName('list');
 var cont_sec=0;
 var mod=document.getElementsByClassName('content-mod');
-console.log(list);
 sec1.addEventListener("click",function(){
     cont_sec=1;
     change_sec(cont_sec);
@@ -21,7 +20,6 @@ sec3.addEventListener("click",function(){
 function change_sec(x){
     var c=x;
     var c2=x-1;
-    console.log(c2);
     for(i=0;i<=3;i++){
         if(i==c){
             mod[i].classList.remove("shadow");
