@@ -270,10 +270,94 @@ body{
 
 }
 @media (min-width:601px) and (max-width:1080px){
-
+    body{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns:1fr ;
+        grid-template-rows: 8% 1fr;
+        gap: 2px;
+    }
+    .head{
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+        margin: 0px 6px;
+    }
+    .img-logo{
+        width: 8%;
+        height: 68%;
+        margin: 0px 4%;
+    }
+    .content-sections{
+        width: 50%;
+        margin: 0px 2%;
+    }  
+    .content-sections li{
+        font-size: 16px;
+        letter-spacing: .5px;
+    }
+    .content-sections li:hover{
+        font-size: 18px;
+    }
+    .user{
+        width: 30px;
+        height: 30px;
+    }
+    .cont-first{
+        width: 80%;
+        height: 82%;
+    }
+    .content-mod{
+        display: grid;
+        grid-template-columns: 48% 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+    }
+    .mod-sec-date{
+        border: 2px solid #07e78ae1;
+        padding: 4px;
+    }
+    .date-title span{
+        font-size: 20px;
+    }
+    .date-content{
+        margin: 0px 10px;
+    }
+    .mod-sec-list{
+        border: 2px solid #07e78ae1;
+        padding: 4px;
+    }
+    .list-title span{
+        font-size: 20px;
+    }
+    
+    .list-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10%;
+    }
+    .date-list{
+        list-style: none;
+        width: 94%;
+        height:48px;
+    }
+    #mod0 span{
+        font-family: sans-serif;
+        font-weight: 600;
+        font-size: 26px;
+        color: #aca7a7e1;
+    }
+    .text-select{
+        font-family: sans-serif !important;
+        font-size: 17px !important;
+        color: #fdc306 !important;
+    }
 }
 @media (min-width:1440px){
     body{
+        width: 100vw;
+        height: 100vh;
         display: grid;
         grid-template-columns:1fr ;
         grid-template-rows: 14% 1fr;
