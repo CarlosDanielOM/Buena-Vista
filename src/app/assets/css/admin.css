@@ -125,6 +125,7 @@ body{
     font-family: Georgia;
     font-weight: 600;
     color: #3b0a95;
+    text-align: center;
 }
 .date-content{
     grid-column: 1/2;
@@ -234,6 +235,35 @@ body{
     background-color: yellow;
     margin: 4% 2%;
     cursor: pointer;
+    display: grid;
+    grid-template-columns: 14% 24% 1fr;
+    grid-template-rows: 1fr;
+}
+.list-num1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+.list-img1{
+    grid-column:2/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+.list-img1 img{
+    width: 96%;
+    height: 96%;
+    background-color: aqua;
+}
+.list-title1{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
 }
 #mod0{
     display: flex;
