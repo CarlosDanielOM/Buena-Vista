@@ -144,7 +144,6 @@ body{
 .title-item{
     width: 100%;
     height: 8%;
-    /* background-color: blue; */
 }
 .title-item input{
     width: 100%;
@@ -158,7 +157,6 @@ body{
 .descrip-item{
     width: 100%;
     height: 34%;
-    /* background-color: brown; */
 }
 .descrip-item textarea{
     width: 100%;
@@ -279,11 +277,11 @@ textarea:focus-visible{
     list-style: none;
     width: 94%;
     height: 48px;
-    background-color: yellow;
+    background-color: rgba(0, 225, 255, 0.883);
     margin: 4% 2%;
     cursor: pointer;
     display: grid;
-    grid-template-columns: 14% 24% 1fr;
+    grid-template-columns: 18% 20% 1fr;
     grid-template-rows: 1fr;
 }
 .list-num1{
@@ -301,9 +299,9 @@ textarea:focus-visible{
     align-items: center;
 }
 .list-img1 img{
-    width: 96%;
-    height: 96%;
-    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.609);
 }
 .list-title1{
     grid-column: 3/4;
@@ -407,7 +405,7 @@ textarea:focus-visible{
     .mod-sec-date{
         grid-column: 1/2;
         grid-row: 1/2;
-        border: 4px solid #07e78ae1;
+        border: 4px solid #00ffb3a1;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 10% 1fr;
@@ -422,28 +420,44 @@ textarea:focus-visible{
     }
     .title-item{
         width: 100%;
-        height: 12%;
-        background-color: blue;
+        height: 10%;
+    }
+    .title-item input{
+        padding: 0px 6px;
+        font-size: 14px;
     }
     .descrip-item{
         width: 100%;
         height: 34%;
-        background-color: brown;
+    }
+    .descrip-item textarea{
+        padding: 0px 6px;
+        font-size: 14px;
     }
     .img-item{
         width: 100%;
-        height: 30%;
-        background-color: chartreuse;
+        height: 32%;
+    }
+    .img-item input{
+        font-size: 12px;
+        background-color:#e0e0e09a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .buttons{
         width: 100%;
         height: 12%;
-        background-color: crimson;
+    }
+    .buttons button{
+        width: 30%;
+        height: 56%;
+        font-size: 14px;
     }
     .mod-sec-list{
         grid-column: 1/2;
         grid-row: 2/3;
-        border: 4px solid #07e78ae1;
+        border: 4px solid #00ffb3a1;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 8% 1fr;
@@ -465,7 +479,8 @@ textarea:focus-visible{
     }
     .date-list{
         width: 92%;
-        height: 40px;
+        height: 42px;
+        grid-template-columns: 16% 26% 1fr;
     }
     #mod0{
         display: flex;
@@ -526,7 +541,7 @@ textarea:focus-visible{
         gap: 10px;
     }
     .mod-sec-date{
-        border: 2px solid #07e78ae1;
+        border: 2px solid #00ffb3a1;
         padding: 4px;
     }
     .date-title span{
@@ -536,7 +551,7 @@ textarea:focus-visible{
         margin: 0px 10px;
     }
     .mod-sec-list{
-        border: 2px solid #07e78ae1;
+        border: 2px solid #00ffb3a1;
         padding: 4px;
     }
     .list-title span{
@@ -552,7 +567,8 @@ textarea:focus-visible{
     .date-list{
         list-style: none;
         width: 94%;
-        height:48px;
+        height:44px;
+        grid-template-columns: 16% 26% 1fr;
     }
     #mod0 span{
         font-family: sans-serif;
@@ -609,14 +625,14 @@ textarea:focus-visible{
         gap: 10px;
     }
     .mod-sec-date{
-        border: 4px solid #07e78ae1;
+        border: 4px solid #00ffb3a1;
         padding: 10px;
     }
     .date-title span{
         font-size: 24px;
     }
     .mod-sec-list{
-        border: 4px solid #07e78ae1;
+        border: 4px solid #00ffb3a1;;
         padding: 8px;
     }
     .list-title span{
@@ -632,7 +648,8 @@ textarea:focus-visible{
     .date-list{
         list-style: none;
         width: 94%;
-        height:80px;
+        height:76px;
+        grid-template-columns: 16% 24% 1fr;
     }
     #mod0 span{
         font-family: sans-serif;
